@@ -1,10 +1,11 @@
-import React from "react";const Footer = () => {
+import React from "react";
+const Footer = () => {
    return (
       <div id="footer">
          <div className="container">
             <div className="footer">
                <div className="logo">
-                  <img src="img/logo.svg" alt="" />
+                  <img src="img/logo-1.svg" width={100} alt="" />
                </div>
                <div className="social-media">
                   <a href="https://www.instagram.com/yeste.pictures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">

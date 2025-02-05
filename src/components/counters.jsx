@@ -4,7 +4,7 @@ const Counters = () => {
    useEffect(() => {
       // Start counting animation when the component is mounted
       animateCounter(1, 10000000);  // 10,000,000+
-      animateCounter(2, 10);         // 10
+      animateCounter(2, 14);         // 10
       animateCounter(3, 100);        // 100+
       animateCounter(4, 20);         // 20
    }, []);

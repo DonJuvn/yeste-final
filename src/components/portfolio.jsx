@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-const Portfolio = () => {
+import React, { useState } from "react";const Portfolio = () => {
    const portfolioItems = [
       {
          id: 7,
@@ -14,7 +13,7 @@ const Portfolio = () => {
          description: "Odnako Podcast",
          link: "https://www.youtube.com/watch?v=PvxOpaKy2tE",
       },
-      
+
       {
          id: 9,
          coverImage: "img/nike.png",
@@ -125,25 +124,27 @@ const Portfolio = () => {
             <h1 id="title">Реализованные проекты</h1>
             <div className="portfolio">
                {portfolioItems.map((item) => (
-                  <div className="item" key={item.id}>
-                     <div className="container">
-                        <div className="img">
-                           <img
-                              id="cover"
-                              src={item.coverImage}
-                              alt={item.description}
-                           />
+                  <a className="item" href={item.link}>
+                     <div key={item.id}>
+                        <div className="container">
+                           <div className="img">
+                              <img
+                                 id="cover"
+                                 src={item.coverImage}
+                                 alt={item.description}
+                              />
+                           </div>
+                           <p>{item.description}</p>
+                           <a
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           >
+                              <img src="img/link.svg" alt="Link" />
+                           </a>
                         </div>
-                        <p>{item.description}</p>
-                        <a
-                           href={item.link}
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           <img src="img/link.svg" alt="Link" />
-                        </a>
                      </div>
-                  </div>
+                  </a>
                ))}
             </div>
          </div>
